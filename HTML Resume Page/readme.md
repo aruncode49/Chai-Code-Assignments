@@ -20,7 +20,10 @@ To see the resume, download the zip file and extract it. Then simply **double-cl
 
 Here is what the resume looks like:
 
-<!-- Add a screenshot of the resume -->
+<img width="1235" height="735" alt="image" src="https://github.com/user-attachments/assets/7f65a2e7-2a91-4441-ab89-17499901fc7b" />
+<img width="1223" height="871" alt="image" src="https://github.com/user-attachments/assets/e9a0e55e-7576-4dbf-8d89-9f5de5b2d04b" />
+
+
 
 ## Author
 
