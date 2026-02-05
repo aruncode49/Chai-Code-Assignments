@@ -6,7 +6,7 @@ This project is a recreation of the [Cursor.com](https://cursor.com) landing pag
 
 The following sections have been implemented with high attention to detail:
 
-- **Navigation Header**: Responsive navigation with hover effects.
+- **Navigation Header**: Navigation with hover effects.
 - **Hero Section**: Main value proposition and primary call-to-action.
 - **Social Proof**: "Trusted by" section with company logos.
 - **Features**: Detailed feature blocks for Agent, Autocomplete, and Ecosystem.
