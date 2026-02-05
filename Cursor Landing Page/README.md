@@ -53,8 +53,10 @@ The design utilizes a sophisticated dark theme palette:
 
 ## Screenshot
 
-<!-- Screenshot will be added here -->
+<img width="2754" height="1551" alt="image" src="https://github.com/user-attachments/assets/ff4652d9-1037-4d59-b113-ef911cf3fc28" />
+<img width="2754" height="1551" alt="image" src="https://github.com/user-attachments/assets/371ca432-29a2-42cc-9559-6685819a6814" />
+<img width="2754" height="1551" alt="image" src="https://github.com/user-attachments/assets/00d1de0b-129c-4682-a5ef-170809d2cba3" />
 
 ## Live Demo
 
-The website is currently deployed on Netlify. You can use the provided link to test and view the live version.
+The website is currently deployed on Netlify. You can visit this link: https://cursor49.netlify.app to view the live version.
