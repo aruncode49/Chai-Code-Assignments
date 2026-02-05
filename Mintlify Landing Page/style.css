@@ -1,8 +1,280 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
+:root {
+  --bg-primary: #08090a;
+  --button-hover: #d9dadd;
+  --text-secondary: #ffffffb3;
+  --text-link: #18e299;
+}
+
+/* Helper Classes */
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-inline: 10px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-cols-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.text-12 {
+  font-size: 12px;
+}
+
+.text-14 {
+  font-size: 14px;
+}
+
+.text-15 {
+  font-size: 15px;
+}
+
+.text-16 {
+  font-size: 16px;
+}
+
+.text-18 {
+  font-size: 18px;
+}
+
+.text-20 {
+  font-size: 20px;
+}
+
+.text-24 {
+  font-size: 24px;
+}
+
+.text-40 {
+  font-size: 40px;
+}
+
+.text-56 {
+  font-size: 56px;
+}
+
+.weight-400 {
+  font-weight: 400;
+}
+
+.weight-500 {
+  font-weight: 500;
+}
+
+.weight-600 {
+  font-weight: 600;
+}
+
+.mt {
+  margin-top: var(--mt);
+}
+
+.margin {
+  margin: var(--margin);
+}
+
+.padding {
+  padding: var(--padding);
+}
+
+.text-primary {
+  color: var(--text-primary);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.text-link {
+  color: var(--text-link);
+}
+
+.button-hover:hover {
+  background-color: var(--button-hover);
+  cursor: pointer;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Application Styling */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: #ffffff;
+  background-image: url("assets/bg-dark.svg");
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Header Section */
+header {
+  height: 66px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: transparent;
+  backdrop-filter: none;
+}
+
+header.scrolled {
+  background-color: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(12px);
+}
+
+header .container {
+  height: 100%;
+}
+
+header img {
+  height: 24px;
+}
+
+header ul {
+  list-style: none;
+}
+
+header li {
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+header li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+header button {
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+header button:first-child {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+/* Hero Section */
+.docs-card {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 4px 6px;
+  border-radius: 20px;
+  width: fit-content;
+}
+
+.docs-card span {
+  background-color: #0c8c5e;
+  padding: 2px 6px;
+  border-radius: 20px;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+}
+
+main::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.6) 60%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 2;
+}
+
+main .email-input-container {
+  padding: 5px 5px 5px 18px;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: fit-content;
+  margin-inline: auto;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+main .email-input-container input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 15px;
+}
+
+main .email-input-container input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+main .email-input-container button {
+  border: none;
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 15px;
+  color: black;
+}
+
+main .hero-image-container {
+  width: 100%;
+}
+
+main .hero-image-container img {
+  width: 100%;
+  object-fit: cover;
+  margin: 0 auto;
+  border-radius: 25px;
+  border: 3px solid rgba(255, 255, 255, 0.1);
 }

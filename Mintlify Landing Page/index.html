@@ -7,10 +7,65 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
     <title>Mintlify - The Intelligent Documentation Platform</title>
+    <script src="https://kit.fontawesome.com/0e1a621ed6.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <h1>Welcome to Mintlify</h1>
+    <!-- Header Section -->
+    <header>
+        <div class="container flex justify-between align-center">
+            <img src="assets/mintlify-logo.svg" alt="Mintlify Logo">
+            <ul class="flex align-center text-15 weight-500" style="padding-left: 100px;">
+                <li>Resource</li>
+                <li>Documentation</li>
+                <li>Customer</li>
+                <li>Blog</li>
+                <li>Pricing</li>
+            </ul>
+            <div class="flex align-center" style="gap: 10px;">
+                <button class="text-15 weight-500">Contact Sales</button>
+                <button class="button-hover text-15 weight-500">Start for Free</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="mt" style="--mt: 100px">
+        <div class="container">
+            <!-- Docs card -->
+            <div class="flex align-center docs-card margin text-14" style="--margin: 0 auto;gap: 10px; ">
+                <span>NEW</span>
+                <p>Self-updating docs with agent suggestions</p>
+                <i class="fa-solid fa-circle-chevron-right"></i>
+            </div>
+            <h2 class="text-56 text-center" style="margin-top: 60px;">The Intelligent <br> Knowledge Platform</h2>
+            <p class="text-18 text-center" style="margin-top: 20px; line-height: 27px;">Helping teams create and
+                maintain
+                world-class <br> documentation built for both humans and AI</p>
+            <div class="email-input-container" style="margin-top: 40px;">
+                <input type="text" placeholder="Email address">
+                <button class="button-hover">Start now</button>
+            </div>
+
+            <div class="hero-image-container" style="margin-top: 100px;">
+                <img src="assets/hero-image-dark.svg" alt="Hero Image">
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Script -->
+    <script>
+        const header = document.querySelector("header");
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 10) {
+                header.classList.add("scrolled");
+            } else {
+                header.classList.remove("scrolled");
+            }
+        });
+    </script>
 </body>
 
 </html>
