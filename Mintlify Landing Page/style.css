@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 :root {
   --bg-primary: #08090a;
   --button-hover: #d9dadd;
@@ -126,6 +128,10 @@
 
 .text-center {
   text-align: center;
+}
+
+.bg-black {
+  background-color: var(--bg-primary);
 }
 
 /* Application Styling */
@@ -277,4 +283,40 @@ main .hero-image-container img {
   margin: 0 auto;
   border-radius: 25px;
   border: 3px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Intelligence Section */
+.intelligence-card div {
+  padding: 20px;
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.intelligence-card div p:first-child,
+.intelligence-bottom-card p:first-child {
+  font-size: 12px;
+  color: var(--text-link);
+  font-family: "Geist Mono", monospace;
+  font-weight: 500;
+}
+
+.intelligence-card div img {
+  width: 350px;
+  margin-inline: auto;
+}
+
+.intelligence-bottom-card {
+  padding: 20px;
+  padding: 30px;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  gap: 20px;
+  padding-bottom: 30px;
+}
+
+.intelligence-bottom-card img {
+  width: 100%;
 }
