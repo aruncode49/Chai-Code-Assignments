@@ -93,6 +93,10 @@ a {
   color: var(--text-accent-hover);
 }
 
+.hide_on_desktop {
+  display: none;
+}
+
 .svg_accent_color {
   width: 16px;
   height: 16px;
@@ -506,6 +510,7 @@ header .download_nav_button:hover {
 .team_photo img {
   border-radius: 5px;
   object-fit: contain;
+  width: 100%;
 }
 
 /* HIGHLIGHTS SECTION */
@@ -622,4 +627,198 @@ header .download_nav_button:hover {
 
 .footer .copyright_container img {
   height: 55px;
+}
+
+/* media queries */
+@media (max-width: 768px) {
+  .hide_on_mobile {
+    display: none;
+  }
+
+  .hide_on_desktop {
+    display: block;
+  }
+
+  .testimonial {
+    padding-top: 70px;
+  }
+
+  #container {
+    padding-inline: 14px;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  .hero_section {
+    text-align: center;
+  }
+
+  .hero_section h2 {
+    font-size: 32px;
+    font-weight: 500;
+  }
+
+  .hero_section button {
+    margin: 20px auto;
+  }
+
+  .hero_image img {
+    border-radius: 10px;
+  }
+
+  .brand_logo_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .feature_section {
+    flex-direction: column-reverse;
+    padding: 30px 20px;
+  }
+
+  .feature_section img {
+    border-radius: 10px;
+  }
+
+  .feature_section.reversed {
+    flex-direction: column-reverse;
+    padding: 30px 20px;
+  }
+
+  .feature_section .content,
+  .feature_section.reversed .content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .feature_section a {
+    padding: 10px 0;
+    justify-content: center;
+  }
+
+  .testimonial .testimonial_card_container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .testimonial .testimonial_card_container {
+    gap: 20px;
+  }
+
+  .testimonial h2 {
+    font-size: 26px;
+    padding-inline: 30px;
+  }
+
+  .testimonial .testimonial_card_container {
+    margin-top: 18px;
+  }
+
+  .stories .stories_container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .stories h2 {
+    text-align: center;
+  }
+
+  .stories .story_card {
+    padding-top: 16px;
+  }
+
+  .stories .stories_container h3,
+  .stories .stories_container p,
+  .stories .stories_container a {
+    padding-left: 6px;
+  }
+
+  .changelog .changelog_card_container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+
+  .changelog h2 {
+    text-align: center;
+  }
+
+  .changelog .changelog_card_container {
+    margin-top: 18px;
+  }
+
+  .changelog a {
+    justify-content: center;
+  }
+
+  .team_section h2 {
+    text-align: center;
+    font-size: 36px;
+  }
+
+  .team_section button {
+    margin: 20px auto;
+  }
+
+  .team_photo {
+    height: 400px;
+    width: 100%;
+  }
+
+  .team_photo img {
+    border-radius: 5px;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .highlight {
+    padding: 50px 0;
+  }
+
+  .highlight_title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 26px;
+  }
+
+  .highlight #container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .highlight_card_container {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .highlight_card {
+    height: 200px;
+  }
+
+  .highlight_card_container a {
+    justify-content: center;
+  }
+
+  .cta {
+    padding: 100px 20px;
+  }
+
+  .cta p {
+    font-size: 40px;
+  }
+
+  .footer .footer_grid {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 50px;
+    padding-left: 60px;
+  }
+
+  .footer .copyright_container {
+    margin-top: 50px;
+    padding-bottom: 30px;
+  }
+
+  .footer .copyright-certified-container {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
 }
