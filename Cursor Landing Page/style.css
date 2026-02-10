@@ -807,7 +807,7 @@ header .download_nav_button:hover {
   .footer .footer_grid {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 50px;
-    padding-left: 60px;
+    padding-left: 10px;
   }
 
   .footer .copyright_container {
